@@ -1,7 +1,7 @@
 import request from 'supertest';
 
 import { _test as EnvTest } from 'config/env';
-import connect from 'db/connect';
+import { connect } from 'db';
 import app, { _test as AppTest } from './app';
 
 const { env } = EnvTest;
