@@ -1,7 +1,9 @@
 import express from 'express';
 
+import authenticationRoutes from './authentication';
+
 const router = express.Router();
 
-router.get('/hello-world', (req, res) => res.send('Hello world!'));
+router.use('/api/authentication', authenticationRoutes);
 
 export default router;

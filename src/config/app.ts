@@ -3,6 +3,7 @@ import logger from 'morgan';
 import express, { Express } from 'express';
 
 import './env'; // initializes env vars using our configuration
+import './passport';
 
 export default function (app: Express): void {
     // TODO: make this dev or prod mode
